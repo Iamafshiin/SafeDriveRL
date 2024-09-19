@@ -64,7 +64,7 @@ def plot_performance(history):
 
 # Initialize agents and environment
 env = gym.make("highway-v0")
-safety_agent = SafetyAgent(model=PPO.load("highway_ppo/model"))  # Assuming PPO model is already trained
+safety_agent = SafetyAgent(model=PPO.load("safety_ppo_model"))  # Assuming PPO model is already trained
 security_agent = SecurityAgent(model=PPO.load("security_ppo_model"))
 attack_simulation = AttackSimulation()
 
