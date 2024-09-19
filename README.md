@@ -115,5 +115,5 @@ SafeDriveRL/
 ├── models/                  # Directory to save trained models
 │   ├── safety_ppo_model/    # Saved PPO model for the safety agent
 │   └── security_ppo_model/  # Saved PPO model for the security agent
-└── utils/                   # Utility scripts for plotting, metrics, etc.
+└── requirments.txt           
 ```
