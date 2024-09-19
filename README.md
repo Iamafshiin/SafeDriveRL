@@ -118,7 +118,8 @@ SafeDriveRL/
 └── requirments.txt           
 ```
 
-Please cite this repo as follows:
-'''
+## Please cite this repo as follows:
+
+'''bash
 Afshin Hasani, Mehran Alidoost Nia, Reza Ebrahimi Atani "Autonomous Driving with Reinforcement Learning for First-Prioritizing Safety over Security," 2024, GitHub, GitHub repository, [https://github.com/eleurent/highway-env](https://github.com/Iamafshiin/SafeDriveRL)
 '''
