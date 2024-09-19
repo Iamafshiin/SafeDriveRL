@@ -1,4 +1,4 @@
-# Autonomous Driving with Reinforcement Learning for Safety and Security
+# Autonomous Driving with Reinforcement Learning for First-Prioritizing Safety over Security
 
 This project implements a reinforcement learning (RL) system to ensure **safety** and **security** in autonomous driving environments. It uses **Proximal Policy Optimization (PPO)** to train agents for safe driving behavior and for detecting and mitigating security threats such as **GPS spoofing** and **Man-in-the-Middle (MitM) attacks**. The system follows a **MAPE-K loop** to monitor, analyze, plan, and execute decisions based on environmental data and security threats.
 
@@ -117,3 +117,8 @@ SafeDriveRL/
 │   └── security_ppo_model/  # Saved PPO model for the security agent
 └── requirments.txt           
 ```
+
+Please cite this repo as follows:
+'''
+Afshin Hasani, Mehran Alidoost Nia, Reza Ebrahimi Atani "Autonomous Driving with Reinforcement Learning for First-Prioritizing Safety over Security," 2024, GitHub, GitHub repository, [https://github.com/eleurent/highway-env](https://github.com/Iamafshiin/SafeDriveRL)
+'''
