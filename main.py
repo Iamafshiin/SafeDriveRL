@@ -1,7 +1,5 @@
 import gymnasium as gym
 from mapek_loop import MAPEKLoop
-from safety_agent import SafetyAgent
-from security_agent import SecurityAgent
 from attack_simulation import AttackSimulation
 import matplotlib.pyplot as plt
 from stable_baselines3 import PPO
@@ -64,12 +62,12 @@ def plot_performance(history):
 
 # Initialize agents and environment
 env = gym.make("highway-v0")
-safety_agent = SafetyAgent(model=PPO.load("safety_ppo_model"))  # Assuming PPO model is already trained
-security_agent = SecurityAgent(model=PPO.load("security_ppo_model"))
+safety_model = PPO.load("safety_ppo_model")
+security_model = PPO.load("security_ppo_model")
 attack_simulation = AttackSimulation()
 
 # Initialize MAPE-K loop
-mapek_loop = MAPEKLoop(safety_agent, security_agent, attack_simulation, env)
+mapek_loop = MAPEKLoop(safety_model, security_model, attack_simulation, env)
 
 # Run simulation over multiple episodes
 num_episodes = 5
